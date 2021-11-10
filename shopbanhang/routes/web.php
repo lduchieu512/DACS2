@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -11,8 +11,27 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+
+// Frontend
+/* 
+use App\Http\Controllers\HomeController; 
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/trang-chu','App\Http\Controllers\HomeController@index');
+*/
+/*
+//Backend
+use App\Http\Controllers\AdminController; 
+Route::get('/', [AdminController::class, 'index']);
+Route::get('/Admin','App\Http\Controllers\AdminController@index');
+*/
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
+Route::get('/',[HomeController::class,'index']);
+Route::get('/trang-chu',[HomeController::class,'index']);
+Route::get('/admin',[AdminController::class,'index']);
+Route::get('/dashboard',[AdminController::class,'show_dashboard']);
+Route::get('/logout',[AdminController::class,'logout']);
+Route::post('/admin-dashboard',[AdminController::class,'dashboard']);
