@@ -37,6 +37,7 @@ ul,label{
 body a:hover{
 	text-decoration:none;
 }
+
 	/*sidebar navigation*/
 #sidebar {
     width:240px;
@@ -47,6 +48,17 @@ body a:hover{
     -moz-transition:all .3s ease-in-out;
     -o-transition:all .3s ease-in-out;
     transition:all .3s ease-in-out;
+}
+span.fa-thumb-styling.fa.fa-thumbs-up {
+    font-size: 28px;
+    color: green;
+}
+span.fa-thumb-styling.fa.fa-thumbs-down {
+    font-size: 28px;
+    color: red;
+}
+a.active.styling-edit {
+    font-size: 20px;
 }
 #sidebar ul li {
     position: relative;
@@ -3143,4 +3155,11 @@ div#graph1, div#graph4, div#graph5, div#graph6, div#graph7, div#graph8, div#grap
 .chart_agile_bottom {
     padding: 0;
 }
+}
+span.text-alert {
+    color: red;
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
 }
