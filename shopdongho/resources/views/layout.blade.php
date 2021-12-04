@@ -103,7 +103,7 @@
                                  <?php 
                                 }else{
                                 ?>
-                                 <li><a href="{{URL::to('/dang-nhap')}}"><i class="fa fa-crosshairs"></i> Thanh toán</a></li>
+                                 <li><a href="{{URL::to('/login-checkout')}}"><i class="fa fa-crosshairs"></i> Thanh toán</a></li>
                                 <?php
                                  }
                                 ?>
@@ -119,7 +119,7 @@
                                 <?php
                             }else{
                                  ?>
-                                 <li><a href="{{URL::to('/dang-nhap')}}"><i class="fa fa-lock"></i> Đăng nhập</a></li>
+                                 <li><a href="{{URL::to('/login-checkout')}}"><i class="fa fa-lock"></i> Đăng nhập</a></li>
                                  <?php 
                              }
                                  ?>
